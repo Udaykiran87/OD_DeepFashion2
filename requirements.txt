@@ -1,0 +1,11 @@
+notebook
+Cython
+labelImg
+wget
+pillow
+pyyaml
+pycocotools
+numpy==1.23.1
+
+### local packages -
+-e . # << uncomment this to install from setup.py

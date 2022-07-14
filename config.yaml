@@ -1,0 +1,8 @@
+artifacts:
+  ARTIFACTS_DIR: artifacts
+
+paths:
+  WORKSPACE_PATH : workspace
+  SCRIPTS_PATH : scripts
+
+
