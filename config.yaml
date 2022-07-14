@@ -1,5 +1,6 @@
 artifacts:
   ARTIFACTS_DIR: artifacts
+  DETECTRON2_URL: 'git+https://github.com/facebookresearch/detectron2.git'
 
 paths:
   WORKSPACE_PATH : workspace
