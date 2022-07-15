@@ -4,6 +4,6 @@ artifacts:
 
 paths:
   WORKSPACE_PATH : workspace
-  SCRIPTS_PATH : scripts
+  IMAGE_PATH : images
 
 
