@@ -29,7 +29,12 @@ OR
 source activate ./env
 ```
 
-### STEP 03- Install detectron2: Stage 01
+### STEP 03- Create necessary folder structures: Stage 01
+```bash
+python src/components/stage_01_folder_setup.py
+```
+
+### STEP 04- Install detectron2: Stage 02
 ```bash
 python src/components/stage_01_install_detectron2.py
 ```
