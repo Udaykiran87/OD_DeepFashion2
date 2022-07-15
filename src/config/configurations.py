@@ -34,9 +34,7 @@ class Configuration:
             image_dir = self.config[PATH_KEY][IMAGE_PATH]
 
             artifcats_path = self.config[ARTIFACTS_KEY][ARTIFACTS_DIR]
-            workspace_path = os.path.join(
-                artifcats_path, workspace_dir
-            )
+            workspace_path = os.path.join(artifcats_path, workspace_dir)
 
             image_path = os.path.join(workspace_path, image_dir)
 
@@ -55,10 +53,17 @@ class Configuration:
         """
         try:
             detectron2_url = self.config[ARTIFACTS_KEY][DETECTRON2_URL]
-            detectron2_url = self.config[ARTIFACTS_KEY][DETECTRON2_URL]
+            dataset_train_url = self.config[ARTIFACTS_KEY][TRAIN_URL]
+            dataset_test_url = self.config[ARTIFACTS_KEY][TEST_URL]
+            dataset_val_url = self.config[ARTIFACTS_KEY][VALIDATION_URL]
+            json_for_val_url = self.config[ARTIFACTS_KEY][JSON_FOR_VAL_URL]
 
             url_name_config = UrlNameConfig(
                 detectron2_url=detectron2_url,
+                dataset_train_url=dataset_train_url,
+                dataset_test_url=dataset_test_url,
+                dataset_val_url=dataset_val_url,
+                json_for_val_url=json_for_val_url,
             )
             return url_name_config
         except Exception as e:

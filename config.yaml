@@ -1,6 +1,10 @@
 artifacts:
   ARTIFACTS_DIR: artifacts
   DETECTRON2_URL: 'git+https://github.com/facebookresearch/detectron2.git'
+  TRAIN_URL: '1lQZOIkO-9L0QJuk_w1K8-tRuyno-KvLK'
+  TEST_URL: '1hsa-UE-LX8sks8eAcGLL-9QDNyNt6VgP'
+  VALIDATION_URL: '1O45YqhREBOoLudjA06HcTehcEebR0o9y'
+  JSON_FOR_VAL_URL: '12DmrxXNtl0U9hnN1bzue4XX7nw1fSMZ5'
 
 paths:
   WORKSPACE_PATH : workspace

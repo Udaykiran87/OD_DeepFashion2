@@ -36,5 +36,10 @@ python src/components/stage_01_folder_setup.py
 
 ### STEP 04- Install detectron2: Stage 02
 ```bash
-python src/components/stage_01_install_detectron2.py
+python src/components/stage_02_install_detectron2.py
+```
+
+### STEP 05- Download and prepare dataset: Stage 03
+```bash
+python src/components/stage_03_prepare_data.py
 ```
