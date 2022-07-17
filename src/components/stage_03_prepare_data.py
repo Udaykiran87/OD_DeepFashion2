@@ -1,11 +1,11 @@
 import logging
 import os
 import sys
-import wget
 import subprocess
 from src.config import Configuration
 from src.exception import CustomException
 from src.entity import PathConfig, UrlNameConfig
+from src.utils import Converter
 
 
 logging.basicConfig(
@@ -208,3 +208,5 @@ if __name__ == "__main__":
         project_config.get_paths_config(), project_config.get_url_name_config()
     )
     download.download_data()
+    convert = Converter(project_config.get_paths_config())
+    convert.to_coco()
