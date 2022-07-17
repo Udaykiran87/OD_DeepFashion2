@@ -50,6 +50,7 @@ class Converter:
         Return
         """
         try:
+            logger.info(">>>>>Coco coversion started<<<<<<")
             for type in image_type:
                 json_path = os.path.join(self.path_config.image_path, type, "annos")
                 image_path = os.path.join(self.path_config.image_path, type, "image")
@@ -160,9 +161,12 @@ class Converter:
                                         }
                                     )
 
-                json_name = f"os.path({self.path_config.image_path}, {type}+'.json')"
-                with open(json_name, "w") as f:
+                coco_json_name = os.path.join(image_path, type + ".json")
+                with open(coco_json_name, "w") as f:
                     json.dump(dataset, f)
+                logger.info(
+                    f">>>>>Converted coco file for {type} is saved at {coco_json_name}.<<<<<<"
+                )
 
         except Exception as e:
             message = CustomException(e, sys)
