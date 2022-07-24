@@ -23,7 +23,7 @@ class Custom_Train:
         folder_url_name_config=UrlNameConfig,
         param_config=ParameterConfig,
     ):
-        logger.info(">>>>>Custom Model Training preparation started<<<<<<")
+        logger.info(">>>>>Detectron2 Custom Model Training preparation started<<<<<<")
         self.folder_path_config = folder_path_config
         self.folder_url_name_config = folder_url_name_config
         self.param_config = param_config
