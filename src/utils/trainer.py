@@ -86,7 +86,7 @@ class Trainer:
                 model_zoo.get_config_file(self.url_config.model_url)
             )
             self.cfg.OUTPUT_DIR = self.path_config.output_path
-            self.cfg.DATASETS.TRAIN = (self.dataset_name["validation"],)
+            self.cfg.DATASETS.TRAIN = (self.dataset_name["validation"],)  ## chnage to "train" if you have good PC configuration
             self.cfg.DATASETS.TEST = ()
             self.cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url(
                 self.url_config.model_url
