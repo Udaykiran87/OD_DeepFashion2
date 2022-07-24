@@ -89,6 +89,7 @@ class Configuration:
             batch_size_per_image = self.config[PARAM_KEY][BATCH_SIZE_PER_IMAGE]
             num_classes = self.config[PARAM_KEY][NUM_CLASSES]
             eval_period = self.config[PARAM_KEY][EVAL_PERIOD]
+            thresh_score_test = self.config[PARAM_KEY][SCORE_THRESH_TEST]
 
             param_config = ParameterConfig(
                 images_per_batch=int(images_per_batch),
@@ -100,6 +101,7 @@ class Configuration:
                 batch_size_per_image=int(batch_size_per_image),
                 num_classes=int(num_classes),
                 eval_period=int(eval_period),
+                thresh_score_test=float(thresh_score_test),
             )
             return param_config
         except Exception as e:

@@ -34,5 +34,6 @@ ParameterConfig = namedtuple(
         "batch_size_per_image",
         "num_classes",
         "eval_period",
+        "thresh_score_test",
     ],
 )
