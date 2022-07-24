@@ -43,3 +43,13 @@ python src/components/stage_02_install_detectron2.py
 ```bash
 python src/components/stage_03_prepare_data.py
 ```
+
+### STEP 06- Custom Training: Stage 04
+```bash
+python src/components/stage_04_custom_train.py
+```
+
+### STEP 05- Prediction on an image: Stage 05
+```bash
+python src/components/stage_05_predict.py --test-image "artifacts/workspace/images/test/image/000003.jpg"
+```

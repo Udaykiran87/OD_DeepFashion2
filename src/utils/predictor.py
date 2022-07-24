@@ -68,7 +68,7 @@ class Predictor:
             raise message
         logger.info(">>>>>Dataset registration finished<<<<<<")
 
-    def predict_image(self) -> None:
+    def predict_image(self, test_image) -> None:
         """
         This function performs prediction on an image.
         Return: None
@@ -77,7 +77,7 @@ class Predictor:
             logger.info(f">>>>>Load predict config<<<<<<")
             predictor = DefaultPredictor(self.cfg)
             logger.info(f">>>>>Prediction started<<<<<<")
-            test_image = os.path.join(self.path_config.image_path, "test", "image", "000003.jpg")
+            # test_image = os.path.join(self.path_config.image_path, "test", "image", "000003.jpg")
             im = cv2.imread(test_image)
             outputs = predictor(im)
             logger.info(f">>>>>prediction finished<<<<<<")
